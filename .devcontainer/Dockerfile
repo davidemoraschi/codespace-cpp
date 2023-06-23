@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/devcontainers/cpp:0-${templateOption:imageVariant}
+FROM mcr.microsoft.com/devcontainers/cpp:0-ubuntu-22.04
 
-ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="${templateOption:reinstallCmakeVersionFromSource}"
+ARG REINSTALL_CMAKE_VERSION_FROM_SOURCE="none"
 
 # Optionally install the cmake for vcpkg
 COPY ./reinstall-cmake.sh /tmp/
